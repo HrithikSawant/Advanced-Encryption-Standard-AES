@@ -8,6 +8,7 @@ public class AESEncryption {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a Text :");
         String plainText = sc.nextLine();
         SecretKey secKey = getSecretEncryptionKey();
         byte[] cipherText = encryptText(plainText, secKey);
